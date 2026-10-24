@@ -1,18 +1,16 @@
-# SIT313 - Task P5: DEV@Deakin Newsletter Feature
+# React + Vite
 
-A full-stack newsletter subscription feature for the DEV@Deakin platform. The application connects a React frontend with a Node.js/Express backend to deliver automated welcome emails using the SendGrid Email API.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📌 Project Overview
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- **Frontend:** Built with React and Vite. It collects user email input, performs client-side validation, sends an asynchronous `POST` request to the backend server, and displays feedback using `react-toastify`.
-- **Backend:** Built with Node.js and Express. It handles the `/subscribe` endpoint, enforces CORS policies, parses JSON payloads, sends transactional emails via SendGrid, and logs HTTP status codes in the terminal.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🛠️ Tech Stack
+## Expanding the ESLint configuration
 
-- **Frontend:** React, Vite, JavaScript, CSS, `react-toastify`
-- **Backend:** Node.js, Express.js, CORS, `dotenv`, `@sendgrid/mail`
-- **Tools & Services:** SendGrid API, Git, VS Code
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
